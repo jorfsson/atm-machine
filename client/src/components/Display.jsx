@@ -8,10 +8,17 @@ class Display extends React.Component {
     this.state = {
       user: null
     };
+    this.setUser = this.setUser.bind(this);
+  }
+
+  setUser (user) {
+    this.setState({
+      user: user
+    })
   }
 
   render () {
-    return this.state.user ? <Home /> : <Login />
+    return this.state.user ? <Home user={this.state.user} /> : <Login setUser={this.setUser} />
   }
 }
 

@@ -3,7 +3,9 @@ import Display from './Display.jsx';
 
 const Chassis = () =>
   <div className="chassis">
-    <Display />
+    <div className="display">
+      <Display />
+    </div>
   </div>
 
 const Sign = () =>
