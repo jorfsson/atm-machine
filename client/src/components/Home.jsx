@@ -4,17 +4,14 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: "You"
+      user: props.user
     }
   }
 
-  componentDidMount() {
-
-  }
   render () {
     return (
       <div className="display__screen">
-        <div className="display__screen--half">Title</div>
+        <div className="display__screen--half"><p className="title">Please make a choice...</p></div>
         <div className="display__screen--half bottom">
           <div className="field field--left">
             <div className="buttons__item">

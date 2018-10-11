@@ -13,7 +13,6 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-
     if (parseInt(this.state.value) && this.state.value.length === 4) {
       this.setUser(this.state.value)
     } else {
