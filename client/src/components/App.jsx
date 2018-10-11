@@ -14,10 +14,10 @@ const Sign = () =>
 class App extends React.Component {
   render () {
     return (
-      <div>
-    <Sign />
-    <Chassis />
-  </div>
+      <div className="container">
+        <Sign />
+        <Chassis />
+      </div>
     )
   }
 }
