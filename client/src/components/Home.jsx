@@ -7,13 +7,35 @@ class Home extends React.Component {
       user: "You"
     }
   }
-  
+
   componentDidMount() {
 
   }
   render () {
     return (
-    <div>You are logged in!</div>
+      <div className="display__screen">
+        <div className="field field--left">
+          <div className="buttons__item">
+            <div className="buttons__field--line"></div>
+            <div className="buttons__field--description">Withdraw</div>
+          </div>
+          <div className="buttons__item">
+            <div className="buttons__field--line"></div>
+            <div className="buttons__field--description">Deposit</div>
+          </div>
+        </div>
+
+        <div className="field field--right">
+          <div className="field--right buttons__item">
+            <div className="buttons__field--description">Balance</div>
+            <div className="buttons__field--line"></div>
+          </div>
+          <div className="field--right buttons__item">
+            <div className="buttons__field--description">Re-Enter Pin</div>
+            <div className="buttons__field--line"></div>
+          </div>
+        </div>
+      </div>
     )
   }
 }

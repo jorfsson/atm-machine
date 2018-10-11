@@ -5,7 +5,7 @@ class Chassis extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: null
+      user: '1234'
     };
     this.setUser = this.setUser.bind(this);
   }

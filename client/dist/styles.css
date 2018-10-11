@@ -45,14 +45,10 @@ body * {
 
 .display {
   margin: 0 auto;
-  min-height: 50%;
+  height: 40%;
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-
-.display__screen {
-  width: 80%;
 }
 
 .display__buttons--left {
@@ -64,7 +60,7 @@ body * {
 }
 
 .buttons__item {
-  min-height: 10px;
+  min-height: 30px;
   height: 7%;
   width: 90%;
   display: flex;
@@ -74,11 +70,14 @@ body * {
   margin-left: auto;
 }
 
-.buttons__item__button{
+button {
   width: 70%;
   height: 50%;
-  margin: auto 0;
   background-color: gray;
+}
+
+.buttons__item__button {
+  margin: auto 0;
 }
 
 .buttons__item__line {
@@ -92,6 +91,36 @@ body * {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+}
+
+.display__screen {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.field {
+  width: 40%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.buttons__field--line {
+  width: 20%;
+  height: 50%;
+  border-bottom: 1px blue solid;
+}
+
+.field--right {
+  margin-left: auto;
+}
+
+.field--right .buttons__field--description {
+  width: 100%;
+  text-align: right;
 }
 
 .sign {
