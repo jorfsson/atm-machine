@@ -1,34 +1,32 @@
 body {
   display: flex;
-  border: 1px red solid;
   justify-content: center;
   align-items: flex-end;
 }
 
-.container {
+body * {
+  outline-style: dotted;
+}
 
+.container {
   height: 600px;
   width: 100%;
-  border: 1px blue solid;
 }
 
 .chassis {
   margin: 0 auto;
   min-height: 80%;
   width: 800px;
-  border: 1px red solid;
 }
 
 .display {
   margin: 0 auto;
   min-height: 40%;
   width: 780px;
-  border: 1px red solid;
 }
 
 .sign {
   margin: 0 auto;
   min-height: 20%;
   width: 820px;
-  border: 1px red solid;
 }
