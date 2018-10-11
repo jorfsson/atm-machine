@@ -1,15 +1,18 @@
 body {
   display: flex;
   border: 1px red solid;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .container {
+
   height: 600px;
+  width: 100%;
   border: 1px blue solid;
 }
 
 .chassis {
-  position: relative;
   margin: 0 auto;
   min-height: 80%;
   width: 800px;
