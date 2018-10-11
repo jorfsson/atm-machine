@@ -22,11 +22,13 @@ class Chassis extends React.Component {
   }
 
   render() {
+    let creditStatus = this.state.user ? <img className="credit-cards__image__spliced" src={require('../images/creditcard_sprite.png')} /> : false;
+
     return (
       <div className="chassis">
           <div className="credit-cards">
-            <img className="credit-cards__image__spliced" src={require('../images/creditcard_sprite.png')} />
             <img className="credit-cards__image" src={require('../images/creditcard_sprite.png')} />
+            {creditStatus}
           </div>
           <Display setUser={this.setUser} user={this.state.user} />
       </div>
