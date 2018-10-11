@@ -1,13 +1,11 @@
 import React from 'react';
 import Display from './Display.jsx';
-
-const Chassis = () =>
-  <div className="chassis">
-      <Display />
-  </div>
+import Chassis from './Chassis.jsx';
 
 const Sign = () =>
-  <div className="sign"></div>
+  <div className="sign">
+    <img className="sign__image" src={require('../images/atm_sign.png')} />
+  </div>
 
 class App extends React.Component {
   render () {

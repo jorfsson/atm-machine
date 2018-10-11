@@ -13,14 +13,11 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state.value);
+
     if (parseInt(this.state.value) && this.state.value.length === 4) {
       this.setUser(this.state.value)
     } else {
       alert("Invalid Pin! Please enter a 4 digit number.")
-      this.setState({
-        value: ""
-      })
     }
   }
 

@@ -10,18 +10,42 @@ body * {
 
 .container {
   height: 600px;
-  width: 100%;
+  width: 800px;
 }
 
 .chassis {
   margin: 0 auto;
   min-height: 80%;
-  width: 800px;
+  width: 100%;
+}
+
+.credit-cards {
+  position: relative;
+  width: 100%;
+  height: 8%;
+  margin-bottom: 10px;
+}
+
+.credit-cards__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 5%;
+  clip-path: inset(50% 0 0 0)
+}
+
+.credit-cards__image__spliced {
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  padding: 0 5%;
+  clip-path: inset(0 60% 50% 18%)
 }
 
 .display {
   margin: 0 auto;
-  min-height: 60%;
+  min-height: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -49,18 +73,18 @@ body * {
 .display__buttons-left__item {
   margin-left: auto;
   min-height: 10px;
-  height: 10%;
+  height: 7%;
   width: 90%;
 }
 
 .display__buttons-right__item {
   min-height: 10px;
-  height: 10%;
+  height: 7%;
   width: 90%;
 }
 
 .sign {
   margin: 0 auto;
   min-height: 20%;
-  width: 820px;
+  width: 400px;
 }

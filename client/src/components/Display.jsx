@@ -6,18 +6,19 @@ class Display extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: null
+      user: props.user
     };
-    this.setUser = this.setUser.bind(this);
+    this.setUser = props.setUser;
   }
 
-  setUser (user) {
+  componentWillReceiveProps(nextProps) {
     this.setState({
-      user: user
+      user: nextProps.user
     })
   }
 
   render () {
+    console.log('rerendering with: ' + this.state.user)
     let display;
     this.state.user ? (display = <Home user={this.state.user} />, true)
                     : (display = <Login setUser={this.setUser} />, false)
