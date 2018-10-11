@@ -25,20 +25,44 @@ class Display extends React.Component {
 
     return (
       <div className="display">
-        <div className="display__buttons-left">
-          <div className="display__buttons-left__item"></div>
-          <div className="display__buttons-left__item"></div>
-          <div className="display__buttons-left__item"></div>
-          <div className="display__buttons-left__item"></div>
+        <div className="display__buttons display__buttons--left">
+          <div className="buttons__item">
+            <div className="buttons__item__button"></div>
+            <div className="buttons__item__line"></div>
+          </div>
+          <div className="buttons__item">
+            <div className="buttons__item__button"></div>
+            <div className="buttons__item__line"></div>
+          </div>
+          <div className="buttons__item">
+            <div className="buttons__item__button"></div>
+            <div className="buttons__item__line"></div>
+          </div>
+          <div className="buttons__item">
+            <div className="buttons__item__button"></div>
+            <div className="buttons__item__line"></div>
+          </div>
         </div>
         <div className="display__screen">
           {display}
         </div>
-        <div className="display__buttons-right">
-          <div className="display__buttons-right__item"></div>
-          <div className="display__buttons-right__item"></div>
-          <div className="display__buttons-right__item"></div>
-          <div className="display__buttons-right__item"></div>
+        <div className="display__buttons display__buttons--right">
+          <div className="buttons__item">
+            <div className="buttons__item__line"></div>
+            <div className="buttons__item__button"></div>
+          </div>
+          <div className="buttons__item">
+            <div className="buttons__item__line"></div>
+            <div className="buttons__item__button"></div>
+          </div>
+          <div className="buttons__item">
+            <div className="buttons__item__line"></div>
+            <div className="buttons__item__button"></div>
+          </div>
+          <div className="buttons__item">
+            <div className="buttons__item__line"></div>
+            <div className="buttons__item__button"></div>
+          </div>
         </div>
       </div>
     )

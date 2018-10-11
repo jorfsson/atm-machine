@@ -55,7 +55,7 @@ body * {
   width: 80%;
 }
 
-.display__buttons-left {
+.display__buttons--left {
   width: 10%;
   display: flex;
   justify-content: flex-end;
@@ -63,24 +63,35 @@ body * {
   margin-left: auto;
 }
 
-.display__buttons-right {
+.buttons__item {
+  min-height: 10px;
+  height: 7%;
+  width: 90%;
+  display: flex;
+}
+
+.display__buttons--left .buttons__item {
+  margin-left: auto;
+}
+
+.buttons__item__button{
+  width: 70%;
+  height: 50%;
+  margin: auto 0;
+  background-color: gray;
+}
+
+.buttons__item__line {
+  width: 30%;
+  height: 50%;
+  border-bottom: 1px gray solid;
+}
+
+.display__buttons--right {
   width: 10%;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-}
-
-.display__buttons-left__item {
-  margin-left: auto;
-  min-height: 10px;
-  height: 7%;
-  width: 90%;
-}
-
-.display__buttons-right__item {
-  min-height: 10px;
-  height: 7%;
-  width: 90%;
 }
 
 .sign {
