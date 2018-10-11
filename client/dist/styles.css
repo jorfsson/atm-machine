@@ -21,8 +21,42 @@ body * {
 
 .display {
   margin: 0 auto;
-  min-height: 40%;
-  width: 780px;
+  min-height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.display__screen {
+  width: 80%;
+}
+
+.display__buttons-left {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.display__buttons-right {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.display__buttons-left__item {
+  margin-left: auto;
+  min-height: 10px;
+  height: 10%;
+  width: 90%;
+}
+
+.display__buttons-right__item {
+  min-height: 10px;
+  height: 10%;
+  width: 90%;
 }
 
 .sign {

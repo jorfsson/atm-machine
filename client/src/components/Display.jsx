@@ -18,7 +18,29 @@ class Display extends React.Component {
   }
 
   render () {
-    return this.state.user ? <Home user={this.state.user} /> : <Login setUser={this.setUser} />
+    let display;
+    this.state.user ? (display = <Home user={this.state.user} />, true)
+                    : (display = <Login setUser={this.setUser} />, false)
+
+    return (
+      <div className="display">
+        <div className="display__buttons-left">
+          <div className="display__buttons-left__item"></div>
+          <div className="display__buttons-left__item"></div>
+          <div className="display__buttons-left__item"></div>
+          <div className="display__buttons-left__item"></div>
+        </div>
+        <div className="display__screen">
+          {display}
+        </div>
+        <div className="display__buttons-right">
+          <div className="display__buttons-right__item"></div>
+          <div className="display__buttons-right__item"></div>
+          <div className="display__buttons-right__item"></div>
+          <div className="display__buttons-right__item"></div>
+        </div>
+      </div>
+    )
   }
 }
 
