@@ -29,6 +29,7 @@ body * {
   height: 331px;
   width: 358px;
   background-color: rgb(241, 240, 231);
+  border-top: 5px solid #e1e1d7;
 }
 
 /*-------------------------------------------
