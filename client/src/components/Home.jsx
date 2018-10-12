@@ -5,8 +5,19 @@ class Home extends React.Component {
     super(props);
     this.state = {
       user: props.user,
-      message: "Please make a choice..."
+      message: "Please make a choice...",
+      balance: 0
     }
+    this.setScreen = props.setScreen;
+  }
+
+  getBalance() {
+    // axios.get('http://localhost:3000/balance')
+    // .then((response) => {
+    //   this.setState({
+    //   balance: response.data.balance
+    // });
+    this.setScreen('balance');
   }
 
   render () {
