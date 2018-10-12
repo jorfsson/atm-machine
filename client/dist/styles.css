@@ -15,8 +15,9 @@ body * {
 
 .chassis {
   margin: 0 auto;
-  height: 70%;
+  height: 80%;
   width: 80%;
+  background-color: rgb(241, 240, 231);
 }
 
 .credit-cards {
@@ -35,7 +36,7 @@ body * {
 
 .credit-cards__image__spliced {
   height: 120%;
-  margin-top: -6%;
+  margin-top: -7%;
   width: 100%;
   padding: 0 5%;
   clip-path: inset(0 60% 50% 18%)
@@ -47,6 +48,10 @@ body * {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.display__screen--half.bottom {
+  margin-top: -2px;
 }
 
 .display__buttons {
@@ -88,12 +93,27 @@ button {
 }
 
 .login {
+  position: relative;
+  background-color: rgb(126, 180, 213);
   width: 100%;
-  align-items: center;
+  height: 100%;
+  border: 3px solid rgb(255, 255, 214);
+}
+
+.login__pin {
+  position: absolute;
+  bottom: 40%;
+  left: 30%;
+  height: 10%;
+}
+.form {
+  margin: auto;
 }
 
 .display__screen {
+  background-color: rgb(126, 180, 213);
   width: 100%;
+  border: 3px solid rgb(255, 255, 214);
 }
 .display__screen--half {
   width: 100%;
@@ -114,22 +134,26 @@ button {
 .buttons__field--line {
   width: 15%;
   height: 50%;
-  border-bottom: 1px blue solid;
+  border-bottom: 2px white solid;
 }
 
 .field--right {
   margin-left: auto;
 }
 
-.title {
+p.title {
   text-align: center;
   margin-top: auto;
   width: 100%;
+  font-weight: bold;
+  color: white;
 }
 
 .buttons__field--description {
   padding: 0 5px;
   margin: auto 0;
+  font-weight: bold;
+  color: white;
 }
 
 .field--right .buttons__field--description {

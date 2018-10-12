@@ -29,9 +29,8 @@ class Login extends React.Component {
   render () {
     return (
     <div className="login">
-      <h1 className="login__title">Login</h1>
       <form className="login__pin" onSubmit={this.handleSubmit}>
-        <input className="login__pin__input" type="text" value={this.state.value} onChange={this.handleChange} placeholder="Enter in a pin..." />
+        <input className="login__pin__input" type="text" value={this.state.value} onChange={this.handleChange} placeholder="Enter your pin..." />
       </form>
     </div>
     )
