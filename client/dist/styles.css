@@ -6,13 +6,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  background-color: rgb(159, 128, 172);
 }
 
 body * {
-  outline-style: dotted;
   font-family: "Arial", Arial, sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 /*-------------------------------------------
@@ -20,8 +20,8 @@ body * {
 ---------------------------------------------*/
 
 .container {
-  height: 800px;
   min-width: 800px;
+  align-items: flex-end;
 }
 
 .chassis {
@@ -70,7 +70,7 @@ body * {
 .display__screen {
   background-color: rgb(126, 180, 213);
   width: 247px;
-  border: 5px solid rgb(255, 255, 214);
+  border: 5px solid #e1e1d7;
 }
 .display__screen--half {
   width: 100%;
@@ -79,7 +79,7 @@ body * {
 }
 
 .display__screen--half.bottom {
-  margin-top: -2px;
+  margin-top: -5px;
 }
 
 p.title {
@@ -91,7 +91,49 @@ p.title {
 }
 
 /*-------------------------------------------
-  Buttons
+  Display Fields
+---------------------------------------------*/
+
+.field {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.field--right {
+  margin-left: auto;
+}
+
+.field--left {
+  margin-left: auto;
+}
+
+.field--right .buttons__item {
+  width: 100%;
+}
+
+.buttons__field--line {
+  width: 15%;
+  height: 50%;
+  border-bottom: 1px white solid;
+}
+
+.buttons__field--description {
+  width: 100%;
+  padding: 0 5px;
+  font-weight: 700;
+  color: white;
+  margin: auto;
+}
+
+.field--right .buttons__field--description {
+  text-align: right;
+}
+
+/*-------------------------------------------
+  Physical Buttons
 ---------------------------------------------*/
 
 .display__buttons {
@@ -110,7 +152,7 @@ p.title {
   display: flex;
 }
 
-.display__buttons--left.buttons__item {
+.display__buttons--left .buttons__item {
   margin-left: auto;
 }
 
@@ -131,6 +173,7 @@ button {
   border-bottom: 1px rgb(155, 155, 155) solid;
 }
 
+
 /*-------------------------------------------
   Login Screen
 ---------------------------------------------*/
@@ -140,54 +183,15 @@ button {
   background-color: rgb(126, 180, 213);
   width: 247px;
   height: 100%;
-  border: 4px solid #e1e1d7;
+  border: 5px solid #e1e1d7;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 }
 
 .form {
   margin: auto;
-}
-
-/*-------------------------------------------
-  Display Fields
----------------------------------------------*/
-
-.field {
-  width: 40%;
-  min-width: 40%;
-  height: 20%;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  margin-top: auto;
-}
-
-.field--right {
-  margin-left: auto;
-}
-
-.field--left {
-  margin-left: auto;
-}
-
-.buttons__field--line {
-  width: 15%;
-  height: 50%;
-  border-bottom: 2px white solid;
-}
-
-.buttons__field--description {
-  padding: 0 5px;
-  margin: auto 0;
-  font-weight: bold;
-  color: white;
-}
-
-.field--right .buttons__field--description {
-  width: 100%;
-  text-align: right;
 }
 
 /*-------------------------------------------
@@ -212,15 +216,15 @@ button {
 ---------------------------------------------*/
 
 .graffiti {
-
+  position: absolute;
+  margin-top: 40px;
+  margin-left: -175px;
 }
 
 .spanning {
   float: right;
-  margin-right: 80px;
+  margin-right: 57px;
   margin-top: 5px;
-  height: 12px;
-  width: 220px;
 }
 
 .sticker_graf {
