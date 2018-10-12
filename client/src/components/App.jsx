@@ -5,6 +5,7 @@ import Chassis from './Chassis.jsx';
 const Sign = () =>
   <div className="sign">
     <img className="sign__image" src={require('../images/atm_sign.png')} />
+    <img className="images graffiti" src={require('../images/graffiti.png')} />
   </div>
 
 class App extends React.Component {

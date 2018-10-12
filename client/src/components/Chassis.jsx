@@ -31,6 +31,8 @@ class Chassis extends React.Component {
             {creditStatus}
           </div>
           <Display setUser={this.setUser} user={this.state.user} />
+          <img className="images spanning" src={require('../images/spanning_systems.png')} />
+          <img className="images sticker_graf" src={require('../images/sticker_graf.png')} />
       </div>
     )
   }
